@@ -111,11 +111,15 @@ label {
     text-align: left;
     cursor: pointer;
     
+    
 }
 
 .mem-input {
     appearance: none;
+    
 }
+
+
 
 
 .mem:hover .mem-title {
@@ -124,9 +128,13 @@ label {
     
 }
 
+.mem-input:checked + .mem-img {
+    display: block;
+}
+
 .mem-img {
     display: none;    
-    transition-duration: 2s;
+   
     
 }
 
@@ -142,7 +150,7 @@ label {
 
 .mem-card:hover .mem-img {
     display: block;
-    transition-duration: .2s ;
+    transition: 2s;
 }
 
 .mem:active .mem-card {
